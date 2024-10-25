@@ -54,7 +54,7 @@
     <div class="form-group d-flex w-100">
       <button class="btn btn-primary w-100">Lưu</button>
       <button
-        v-if="contactLocal._id"
+        v-if="isEditMode"
         type="button"
         class="ml-2 btn btn-danger w-100"
         @click="deleteContact"
@@ -74,10 +74,11 @@ import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import { useRouter } from "vue-router";
 
-defineEmits(["submit:contact", "delete:contact"]);
+const emit = defineEmits(["submit:contact", "delete:contact"]);
 
 const props = defineProps({
   contact: { type: Object, required: true },
+  isEditMode: { type: Boolean, default: false },
 });
 
 const router = useRouter();

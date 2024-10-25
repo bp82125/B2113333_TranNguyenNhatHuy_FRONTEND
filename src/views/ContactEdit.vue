@@ -5,6 +5,7 @@
       :contact="contact"
       @submit:contact="updateContact"
       @delete:contact="deleteContact"
+      :isEditMode="true"
     />
     <p>{{ message }}</p>
   </div>

@@ -9,7 +9,7 @@ This repository contains the frontend implementation for a Contact Book app, cre
 - Search and filter contacts
 
 ## Assignment Reference  
-The details of the assignment can be found in [assignment.pdf](assignment.pdf)
+The details of the assignment can be found in [CT449_Frontend_Assignment.pdf](./CT449_Frontend_Assignment.pdf)
 
 ## License  
 This project is for academic purposes and is not licensed for commercial use.
